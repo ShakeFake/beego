@@ -6,6 +6,7 @@ package routers
 
 import (
 	"beego/controllers"
+	"beego/utils"
 	"fmt"
 	beego "github.com/beego/beego/v2/server/web"
 )
@@ -57,4 +58,6 @@ func init() {
 	for k, v := range methods {
 		fmt.Printf("%s => %v\n", k, v)
 	}
+
+	utils.Init()
 }
