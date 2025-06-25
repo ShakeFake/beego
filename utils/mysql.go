@@ -17,7 +17,7 @@ func Init() {
 	//orm.RegisterModelWithPrefix("tab_", &models.User{})
 	//orm.RegisterModelWithSuffix("_tab", &models.User{})
 
-	dsn := "root:root@tcp(10.12.23.52:3306)/beego?charset=utf8mb4&parseTime=True&loc=Local"
+	dsn := "root:root@tcp(192.168.1.1:3306)/beego?charset=utf8mb4&parseTime=True&loc=Local"
 	orm.RegisterDataBase("default", "mysql", dsn)
 
 	orm.SetMaxOpenConns("default", 30)

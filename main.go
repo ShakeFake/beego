@@ -15,7 +15,7 @@ func main() {
 
 		// 内置了 admin 页面, 可以进行调试。
 		//beego.BConfig.Listen.EnableAdmin = true
-		//beego.BConfig.Listen.AdminAddr = "10.12.23.52"
+		//beego.BConfig.Listen.AdminAddr = "192.168.1.1"
 		//beego.BConfig.Listen.AdminPort = 8888
 
 		// 可开启内置, XSRF 机制。如果请求头中没有 对应key，则直接拒绝。
